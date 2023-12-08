@@ -77,9 +77,9 @@ h1 {
 nav ul.active {
     left: 0;
 }
-.active{
+/* .active{
     color: #5FF2D1;
-}
+} */
 #resume-button-1 {
     background: none;
     color: inherit;
