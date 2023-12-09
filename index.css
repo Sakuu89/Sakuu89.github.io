@@ -1,12 +1,13 @@
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 body {
-    background-color: rgb(10, 25, 47);
+    /* background-color: rgb(10, 25, 47); */
+    background-image: linear-gradient(to right, #1c6786, #6dbebe);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -46,7 +47,7 @@ nav a {
 }
 
 nav a#logo {
-    color: #5FF2D1;
+    color: aqua;
     font-weight: 700;
     font-size: 28px;
 }
@@ -56,8 +57,8 @@ nav ul a {
 }
 
 nav ul a:hover {
-    border-bottom: 2px solid #5FF2D1;
-    color: #5FF2D1;
+    border-bottom: 2px solid aqua;
+    color: aqua;
 }
 
 section#home {
@@ -77,9 +78,11 @@ h1 {
 nav ul.active {
     left: 0;
 }
-/* .active{
-    color: #5FF2D1;
-} */
+
+.active {
+    color: aqua;
+}
+
 #resume-button-1 {
     background: none;
     color: inherit;
@@ -88,12 +91,14 @@ nav ul.active {
     font: inherit;
     cursor: pointer;
     outline: inherit;
+   
 }
 
 #resume-link-1 {
-    border: 1px solid #5FF2D1;
+    border: 1px solid aqua;
     padding: 8px 12px;
-    color: #5FF2D1;
+    color: aqua;
+    border-radius: 15px;
 }
 
 #resume-button-2 {
@@ -108,19 +113,20 @@ nav ul.active {
 }
 
 #resume-link-2 {
-    border: 1px solid #5FF2D1;
+    border: 1px solid aqua;
     padding: 12px 15px;
-    color: #5FF2D1;
+    color: aqua;
     font-size: large;
+    border-radius: 20px;
 }
 
 #resume-link-1:hover {
-    background-color: #5FF2D1;
+    background-color: aqua;
     color: black;
 }
 
 #resume-link-2:hover {
-    background-color: #5FF2D1;
+    background-color: aqua;
     color: black;
 }
 
@@ -146,20 +152,20 @@ nav ul.active {
 #myname {
     margin: 20px 0px 30px 4px;
     font-weight: 400;
-    color: #5FF2D1;
+    color: aqua;
     font-size: 20px;
 }
 
 #name {
     margin: 0px 0px 10px 2px;
     font-size: clamp(40px, 8vw, 80px);
-    color: #CCD6F6;
+    color: #0b192f;
 }
 
 #title {
     margin: 0px 0px 10px 4px;
     font-size: clamp(20px, 5vw, 30px);
-    color: #5FF2D1;
+    color: aqua;
 }
 
 #home p:nth-child(4) {
@@ -173,7 +179,7 @@ nav ul.active {
 
 #info-div p {
     font-size: clamp(15px, 5vw, 8px);
-    color: #CCD6F6;
+    color: #0b192f;
     margin: 0px 0px 30px 4px;
 
 }
@@ -201,7 +207,7 @@ nav ul.active {
     /*  padding-top: 80px;*/
     width: 100%;
     font-size: 30px;
-    color: #CCD6F6;
+    color: #0b192f;
     text-align: center;
 }
 
@@ -232,11 +238,11 @@ nav ul.active {
 }
 
 #aboutme-title span {
-    color: #5FF2D1;
+    color: aqua;
 }
 
 #img {
-    background-color: #5FF2D1;
+    background-color: aqua;
 }
 
 #user-detail-intro {
@@ -245,14 +251,15 @@ nav ul.active {
     color: #E6E8FA;
     font-size: 15px;
     text-align: center;
-    /* word-spacing: 10px;*/
+    border-radius: 20px;
+    /* word-spacing: 10px; */
     display: flex;
     align-items: center;
     text-align: justify;
-    /* justify-content: center;*/
-    /*  padding-left: 20px;
-    padding-right: 20px;*/
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: center;
+      padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgba(0, 0, 0.9, 0.24) 0px 3px 8px;
 
 }
 
@@ -282,16 +289,18 @@ nav ul.active {
     justify-content: center;
     font-size: 15px;
     color: #E6E8FA;
+    border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .home-img {
-    border-bottom: 8px solid #5FF2D1;
-    border-right: 8px solid #5FF2D1;
+    /* border-bottom: 8px solid #2b758f;
+    border-right: 8px solid #2b758f; */
     padding: 10px;
-    padding-top: 0px;
-    padding-left: 0px;
-    border-radius: 10px;
+    /* padding-top: 0px;
+    padding-left: 0px; */
+    border-radius: 20px;
+    width: 80%;
 }
 
 #skills {
@@ -305,18 +314,19 @@ nav ul.active {
     padding-top: 100px;
     width: 100%;
     font-size: 40px;
-    color: #CCD6F6;
+    color: #0b192f;
     text-align: center;
 }
 
 .skills-card {
-    background-color: #5FF2D1;
+    background-color: unset;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     padding: 20px 20px;
+    border: 2px solid #0b192f
 }
 
 .skills-card:hover {
@@ -358,7 +368,7 @@ nav ul.active {
     padding-top: 100px;
     width: 100%;
     font-size: 40px;
-    color: #CCD6F6;
+    color: #0b192f;
     text-align: center;
 }
 
@@ -373,10 +383,12 @@ nav ul.active {
 
 }
 
+
+
 .project-image-div {
     width: 45%;
     height: 320px;
-    border: 8px solid #5FF2D1;
+    border: 8px solid #1c6786;
     border-radius: 10px;
     padding: 5px;
     display: flex;
@@ -392,7 +404,7 @@ nav ul.active {
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
-    background-color: #5FF2D1;
+    background-color: unset;
     border-radius: 20px;
 }
 
@@ -410,7 +422,7 @@ nav ul.active {
 
 .project-tech-stack {
     font-size: 20px;
-    color:midnightblue;
+    color: powderblue;
     font-weight: bold;
 
 }
@@ -430,7 +442,8 @@ nav ul.active {
     justify-content: space-around;
 
 }
-.githubBtn p{
+
+.githubBtn p {
     padding-left: 10px;
 }
 
@@ -461,7 +474,7 @@ nav ul.active {
     padding-top: 100px;
     width: 100%;
     font-size: 40px;
-    color: #CCD6F6;
+    color: #0b192f;
     text-align: center;
 }
 
@@ -501,7 +514,7 @@ label {
 }
 
 input[type=submit] {
-    background-color: #5FF2D1;
+    background-color: aqua;
     color: black;
     padding: 12px 20px;
     border: none;
@@ -511,7 +524,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #5FF2D1;
+    background-color: aqua;
 }
 
 .container {
@@ -541,15 +554,16 @@ input[type=submit]:hover {
 
 #contact-email,
 #contact-phone {
-    color: #ccc;
+    color: #cccc;
     font-size: 20px;
     padding: 20px;
 }
 
 #stranger-head {
-    color: #5FF2D1;
+    color: aqua;
     font-size: 22px;
     padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
 
 }
@@ -566,7 +580,8 @@ input[type=submit]:hover {
     align-items: center;
     justify-content: center;
 }
-.submit-btn input{
+
+.submit-btn input {
     width: 50%;
 }
 
@@ -588,7 +603,7 @@ input[type=submit]:hover {
     padding-top: 100px;
     width: 100%;
     font-size: 40px;
-    color: #CCD6F6;
+    color: #0b192f;
     text-align: center;
 }
 
@@ -735,7 +750,7 @@ input[type=submit]:hover {
     }
 
     #contact-div {
-       flex-direction: column;
+        flex-direction: column;
         width: 90%;
     }
 
@@ -775,10 +790,10 @@ input[type=submit]:hover {
         height: calc(100vh - 65.18px);
     }
 
-    
+
     #home {
         width: 90%;
-       flex-direction: column;
+        flex-direction: column;
     }
 
     #info-div {
@@ -846,7 +861,7 @@ input[type=submit]:hover {
     }
 
     #contact-div {
-       flex-direction: column;
+        flex-direction: column;
         width: 90%;
     }
 
@@ -870,7 +885,7 @@ input[type=submit]:hover {
 
 
 @media only screen and (max-width: 300px) {
-    
+
     header {
         padding: 2rem 3rem;
     }
@@ -879,10 +894,10 @@ input[type=submit]:hover {
         top: 65.18px;
         height: calc(100vh - 65.18px);
     }
-    
+
     #home {
         width: 90%;
-       flex-direction: column;
+        flex-direction: column;
     }
 
     #info-div {
@@ -951,7 +966,7 @@ input[type=submit]:hover {
     }
 
     #contact-div {
-       flex-direction: column;
+        flex-direction: column;
         width: 90%;
     }
 
@@ -970,14 +985,15 @@ input[type=submit]:hover {
         width: 80%;
         padding: 20px;
     }
-    #contact-subdiv1 img{
+
+    #contact-subdiv1 img {
         width: 30%;
     }
 
 }
 
 @media only screen and (max-width: 100px) {
-    
+
     header {
         padding: 2rem 3rem;
     }
@@ -986,7 +1002,7 @@ input[type=submit]:hover {
         top: 65.18px;
         height: calc(100vh - 65.18px);
     }
-    
+
     #home {
         width: 100%;
         display: flex;
@@ -996,7 +1012,8 @@ input[type=submit]:hover {
         margin: auto;
 
     }
-    #logo{
+
+    #logo {
         font-size: 10px;
         margin-left: 0px;
         padding-left: 0px;
@@ -1067,7 +1084,7 @@ input[type=submit]:hover {
     }
 
     #contact-div {
-       flex-direction: column;
+        flex-direction: column;
         width: 90%;
     }
 
@@ -1086,7 +1103,8 @@ input[type=submit]:hover {
         width: 80%;
         padding: 20px;
     }
-    #contact-subdiv1 img{
+
+    #contact-subdiv1 img {
         width: 30%;
     }
 
@@ -1130,7 +1148,8 @@ input[type=submit]:hover {
         width: 80%;
         padding: 20px;
     }
-    #contact-subdiv1 img{
+
+    #contact-subdiv1 img {
         width: 30%;
     }
 
@@ -1190,7 +1209,7 @@ nav a {
 }
 
 nav a#logo {
-    color: #5FF2D1;
+    color: aqua;
     font-weight: 700;
     font-size: 28px;
 }
@@ -1200,8 +1219,8 @@ nav ul a {
 }
 
 nav ul a:hover {
-    border-bottom: 2px solid #5FF2D1;
-    color: #5FF2D1;
+    border-bottom: 2px solid aqua;
+    color: aqua;
 }
 
 section#home {
@@ -1233,9 +1252,9 @@ nav ul.active {
 }
 
 #resume-link-1 {
-    border: 1px solid #5FF2D1;
+    border: 1px solid aqua;
     padding: 8px 12px;
-    color: #5FF2D1;
+    color: aqua;
 }
 
 #resume-button-2 {
@@ -1250,19 +1269,19 @@ nav ul.active {
 }
 
 #resume-link-2 {
-    border: 1px solid #5FF2D1;
+    border: 1px solid aqua;
     padding: 12px 15px;
-    color: #5FF2D1;
+    color: aqua;
     font-size: large;
 }
 
 #resume-link-1:hover {
-    background-color: #5FF2D1;
+    background-color: aqua;
     color: black;
 }
 
 #resume-link-2:hover {
-    background-color: #5FF2D1;
+    background-color: aqua;
     color: black;
 }
 
@@ -1289,20 +1308,20 @@ nav ul.active {
 #myname {
     margin: 20px 0px 30px 4px;
     font-weight: 400;
-    color: #5FF2D1;
+    color: aqua;
     font-size: 20px;
 }
 
 #name {
     margin: 0px 0px 10px 2px;
     font-size: clamp(40px, 8vw, 80px);
-    color: #CCD6F6;
+    color: #0b192f;
 }
 
 #title {
     margin: 0px 0px 10px 4px;
     font-size: clamp(20px, 5vw, 30px);
-    color: #5FF2D1;
+    color: aqua;
 }
 
 #home p:nth-child(4) {
@@ -1316,7 +1335,7 @@ nav ul.active {
 
 #info-div p {
     font-size: clamp(15px, 5vw, 8px);
-    color: #CCD6F6;
+    color: #0b192f;
     margin: 0px 0px 30px 4px;
 
 }
@@ -1342,9 +1361,9 @@ nav ul.active {
 
 #aboutme-title {
     /*  padding-top: 80px;*/
-    /*width: 100%;
+/*width: 100%;
     font-size: 30px;
-    color: #CCD6F6;
+    color: #0b192f;
     text-align: center;
 }
 
@@ -1375,11 +1394,11 @@ nav ul.active {
 }
 
 #aboutme-title span {
-    color: #5FF2D1;
+    color: aqua;
 }
 
 #img {
-    background-color: #5FF2D1;
+    background-color: aqua;
 }
 
 #user-detail-intro {
@@ -1389,13 +1408,13 @@ nav ul.active {
     font-size: 15px;
     text-align: center;
     /* word-spacing: 10px;*/
-   /* display: flex;
+/* display: flex;
     align-items: center;
     text-align: justify;
     /* justify-content: center;*/
-    /*  padding-left: 20px;
+/*  padding-left: 20px;
     padding-right: 20px;*/
-    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+/*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
 
@@ -1429,8 +1448,8 @@ nav ul.active {
 }
 
 .home-img {
-    border-bottom: 8px solid #5FF2D1;
-    border-right: 8px solid #5FF2D1;
+    border-bottom: 8px solid aqua;
+    border-right: 8px solid aqua;
     padding: 10px;
     padding-top: 0px;
     padding-left: 0px;
@@ -1448,12 +1467,12 @@ nav ul.active {
     padding-top: 100px;
     width: 100%;
     font-size: 40px;
-    color: #CCD6F6;
+    color: #0b192f;
     text-align: center;
 }
 
 .skills-card {
-    background-color: #5FF2D1;
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1501,7 +1520,7 @@ nav ul.active {
     padding-top: 100px;
     width: 100%;
     font-size: 40px;
-    color: #CCD6F6;
+    color: #0b192f;
     text-align: center;
 }
 
@@ -1519,7 +1538,7 @@ nav ul.active {
 .project-image-div {
     width: 45%;
     height: 320px;
-    border: 8px solid #5FF2D1;
+    border: 8px solid aqua;
     border-radius: 10px;
     padding: 5px;
     display: flex;
@@ -1535,7 +1554,7 @@ nav ul.active {
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
-    background-color: #5FF2D1;
+    background-color: aqua;
     border-radius: 20px;
 }
 
@@ -1605,7 +1624,7 @@ nav ul.active {
     padding-top: 100px;
     width: 100%;
     font-size: 40px;
-    color: #CCD6F6;
+    color: #0b192f;
     text-align: center;
 }
 
@@ -1645,7 +1664,7 @@ label {
 }
 
 input[type=submit] {
-    background-color: #5FF2D1;
+    background-color: aqua;
     color: black;
     padding: 12px 20px;
     border: none;
@@ -1655,7 +1674,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #5FF2D1;
+    background-color: aqua;
 }
 
 .container {
@@ -1691,7 +1710,7 @@ input[type=submit]:hover {
 }
 
 #stranger-head {
-    color: #5FF2D1;
+    color: aqua;
     font-size: 22px;
     padding-top: 10px;
     text-align: center;
@@ -1733,7 +1752,7 @@ input[type=submit]:hover {
     padding-top: 100px;
     width: 100%;
     font-size: 40px;
-    color: #CCD6F6;
+    color: #0b192f;
     text-align: center;
 }
 
