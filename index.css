@@ -331,7 +331,9 @@ nav ul.active {
 
 .skills-card:hover {
     transition: 0.5s ease-in;
-    transform: scale(1.2);
+    /* transform: scale(1.2);
+     */
+     transform: scale(1.1) rotate(-5deg);
     cursor: pointer;
 }
 
@@ -358,6 +360,7 @@ nav ul.active {
     object-fit: cover;
 }
 
+
 #projects {
     width: 90%;
     margin: auto;
@@ -383,7 +386,12 @@ nav ul.active {
 
 }
 
-
+.project-card:hover{
+    transition: 0.5s ease-in;
+    transform: scale(1.1);
+    cursor: pointer;
+    font-weight: bold;
+}
 
 .project-image-div {
     width: 45%;
@@ -613,13 +621,23 @@ input[type=submit]:hover {
     justify-content: space-around;
     padding: 20px;
 }
-
+#github-subdiv1 :hover{
+    transition: 0.5s ease-in;
+    transform: scale(1.1);
+    cursor: pointer;
+    font-weight: bold;
+}
 #github-subdiv2 {
     display: flex;
     justify-content: space-around;
     padding: 20px;
 }
-
+#github-subdiv2 :hover{
+    transition: 0.5s ease-in;
+    transform: scale(1.1);
+    cursor: pointer;
+    font-weight: bold;
+}
 .react-activity-calendar {
     width: 80%;
     margin: auto;
