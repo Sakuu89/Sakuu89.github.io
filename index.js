@@ -105,3 +105,29 @@ function highlightNavLink() {
 window.addEventListener('scroll', highlightNavLink);
 
 
+function typeWriterEffect() {
+  const title = document.getElementById('title');
+  const text = title.innerText;
+  title.innerText = ''; // Clear the text content
+  let charIndex = 0;
+
+  function type() {
+      if (charIndex < text.length) {
+          title.textContent += text.charAt(charIndex);
+          charIndex++;
+          setTimeout(type, 100); // Adjust typing speed (milliseconds)
+      }
+  }
+  type();
+}
+
+// Call the typewriter effect function after AOS animation completes
+function animateAndType() {
+  AOS.init(); // Initialize AOS library
+  AOS.refresh(); // Refresh AOS to apply animations
+
+  setTimeout(typeWriterEffect, 1000); // Adjust delay after AOS animation (milliseconds)
+}
+
+// Trigger typewriter effect after the page loads
+window.addEventListener('load', animateAndType);
